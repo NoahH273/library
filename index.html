@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title-section">
+            <img src="" alt="book icon" class="book-icon">
+            <h1 class="title">Digital Library</h1>
+        </div>
+        <div class="header-buttons">
+            <button>
+                Sign in
+            </button>
+            <button>
+                Theme
+            </button>
+        </div>
+    </header>
+    <main class="content-area">
+        <div class="user-library">
+            <header class="user-library-header">
+                <h2 class="user-library-title">Your Books</h2>
+                <select name="user-sort" id="user-sort" class="sort">
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="reverse-alphabetical">Alphabetical (reverse)</option>
+                    <option value="published">Date published</option>
+                    <option value="published-reverse">Date published (reverse)</option>
+                    <option value="pages">Page count (highest)</option>
+                    <option value="pages-reverse">Page count (lowest)</option>
+                </select>
+                <button class="add-book">
+                    +
+                </button>
+            </header>
+            <div class="content">
+
+            </div>
+        </div>
+        <div class="recomended">
+            <header class="recomended-header">
+                <h2 class="recomended-title">Recomended</h2>
+                <select name="recomended-sort" id="recomended-sort" class="sort">
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="reverse-alphabetical">Alphabetical (reverse)</option>
+                    <option value="published">Date published</option>
+                    <option value="published-reverse">Date published (reverse)</option>
+                    <option value="pages">Page count (highest)</option>
+                    <option value="pages-reverse">Page count (lowest)</option>
+                </select>
+            </header>
+            <div class="content">
+                <article class="book">book</article>
+                <article class="book">book</article>
+                <article class="book">book</article>
+                <article class="book"></article>
+            </div>
+        </div>
+    </main>
+    <div class="sidebar">
+        <h2 class="sidebar-title">Stats</h2>
+        <dt>
+            <dt>Books:</dt>
+            <dd>5</dd>
+            <dt>Read:</dt>
+            <dd>3</dd>
+            <dt>Unread:</dt>
+            <dd>2</dd>
+            <dt>Pages:</dt>
+            <dd>234</dd>
+        </dt>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">
+            Copyright © 2023 NoahH273
+        </p>
+    </footer>
+</body>
+</html>
