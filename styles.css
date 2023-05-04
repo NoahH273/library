@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: "header header" 200px
+    grid-template: "header sidebar" 100px
                          "content sidebar" 1fr
                          "footer sidebar" 100px 
                          / 1fr 250px;
@@ -14,14 +14,37 @@
 
 .header {
     grid-area: header;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 0 15px 0 #e5e7eb;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    gap: 25px;
+    padding: 0 50px;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-button {
+    place-self: center;
 }
 
 .content-area {
     grid-area: content;
+    background-color: #fafaf9;
 }
 
 .sidebar {
     grid-area: sidebar;
+    background-color: white;
+    z-index: 15;
 }
 
 .footer {
