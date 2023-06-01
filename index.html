@@ -10,19 +10,17 @@
 </head>
 <body>
     <div class="container">
+    <div class="layover"></div>
         <header class="header">
             <div class="title-section">
-                <img src="" alt="book icon" class="book-icon">
+                <img src="images/book-icon.png" alt="book icon" class="book-icon">
                 <h1 class="title">Digital Library</h1>
             </div>
-            <button class="theme header-button">
-                Theme
-            </button>
             <button class="sign-in header-button">
                 Sign in
             </button>
             <button class="profile header-button">
-                <img src="" alt="profile picture" class="profile-picture">
+                <img src="images/profile-picture.svg" alt="profile picture" class="profile-picture">
             </button>
         </header>
         <main class="content-area">
@@ -48,19 +46,67 @@
                 <header class="recomended-header">
                     <h2 class="recomended-title">Recomended</h2>
                     <select name="recomended-sort" id="recomended-sort" class="sort">
-                        <option value="alphabetical">Alphabetical</option>
-                        <option value="reverse-alphabetical">Alphabetical (reverse)</option>
-                        <option value="published">Date published</option>
-                        <option value="published-reverse">Date published (reverse)</option>
-                        <option value="pages">Page count (highest)</option>
-                        <option value="pages-reverse">Page count (lowest)</option>
+                        <option value="alphabetical">Alphabetical (A-Z)</option>
+                        <option value="reverse-alphabetical">Alphabetical (Z-A)</option>
+                        <option value="published">Date published (Newest)</option>
+                        <option value="published-reverse">Date published (Oldest)</option>
+                        <option value="pages">Page count (Highest)</option>
+                        <option value="pages-reverse">Page count (Lowest)</option>
                     </select>
                 </header>
                 <div class="content">
-                    <article class="book">book</article>
-                    <article class="book">book</article>
-                    <article class="book">book</article>
-                    <article class="book"></article>
+                    <article class="book">
+                        <h3 class="book-title">Harry Potter</h3>
+                        <dl>
+                            <dt>Author: </dt>
+                            <dd>J.K Rowling</dd>
+                            <dt>Pages: </dt>
+                            <dd>309</dd>
+                        </dl>
+                        <label>
+                            Read:
+                            <input type="checkbox" name="read-button" class="read-button">
+                        </label>
+                    </article>
+                    <article class="book">
+                        <h3 class="book-title">Harry Potter</h3>
+                        <dl>
+                            <dt>Author: </dt>
+                            <dd>J.K Rowling</dd>
+                            <dt>Pages: </dt>
+                            <dd>309</dd>
+                        </dl>
+                        <label>
+                            Read:
+                            <input type="checkbox" name="read-button" class="read-button">
+                        </label>
+                    </article>
+                    <article class="book">
+                        <h3 class="book-title">Harry Potter</h3>
+                        <dl>
+                            <dt>Author: </dt>
+                            <dd>J.K Rowling</dd>
+                            <dt>Pages: </dt>
+                            <dd>309</dd>
+                        </dl>
+                        <label>
+                            Read:
+                            <input type="checkbox" name="read-button" class="read-button">
+                        </label>
+                    </article>
+                    <article class="book">
+                        <h3 class="book-title">Harry Potter</h3>
+                        <dl>
+                            <dt>Author: </dt>
+                            <dd>J.K Rowling</dd>
+                            <dt>Pages: </dt>
+                            <dd>309</dd>
+                        </dl>
+                        <label>
+                            Read:
+                            <input type="checkbox" name="read-button" class="read-button">
+                        </label>
+                    </article>
                 </div>
             </div>
         </main>
