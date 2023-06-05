@@ -30,7 +30,7 @@
     grid-auto-columns: max-content;
     grid-auto-flow: column;
     gap: 25px;
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 .book-icon {
@@ -194,11 +194,18 @@ label, input {
     margin: 0;
 }
 
-.layover {
+.overlay {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgb(250, 250, 250, .1);
+    background-color: rgb(250, 250, 250, .5);
     z-index: 1000;
-    display: none;
+    visibility: hidden;
+}
+
+.popup {
+    position: fixed;
+    margin: auto;
+    visibility: hidden;
+    z-index: 1001;
 }
