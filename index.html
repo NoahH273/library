@@ -11,25 +11,30 @@
 </head>
 <body>
     <div class="container">
-    <div class="overlay"></div>
-    <div class="popup">
-        <form action="" class="create-book">
-            <fieldset>
-                <legend>Create A Book</legend>
-                <label for="">
-                    <input type="text"></label>
-                <label for="">
-                    <input type="text">
-                </label>
-                <label for="">
-                    <input type="text">
-                </label>
-                <label for="">
-                    <input type="text">
-                </label>
-            </fieldset>
-        </form>
-    </div>
+        <div class="overlay">
+            <form action="" class="create-book">
+                <fieldset>
+                    <legend>Create A Book</legend>
+                    <label for="">
+                        Title:
+                        <input required type="text">
+                    </label>
+                    <label for="">
+                        Author:
+                        <input required type="text">
+                    </label>
+                    <label for="">
+                        Pages:
+                        <input required type="text">
+                    </label>
+                    <label for="">
+                        Read:
+                        <input type="checkbox">
+                    </label>
+                    <button type="submit" class="submit-button">Submit</button>
+                </fieldset>
+            </form>
+        </div>
         <header class="header">
             <div class="title-section">
                 <img src="images/book-icon.png" alt="book icon" class="book-icon">
