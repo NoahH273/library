@@ -146,9 +146,6 @@
     margin: 0;
 }
 
-label, input {
-    cursor: grab;
-}
 
 
 
@@ -183,6 +180,12 @@ label, input {
 
 .stats dd {
    margin: 0;
+}
+
+.read-button {
+   margin: 0;
+   place-self: center initial;
+   cursor: grab;
 }
 
 .footer {
@@ -256,6 +259,7 @@ input {
     cursor: grab;
     transition: scale 0.5s;
 }
+
 
 .close-button:hover {
     color: red;
