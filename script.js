@@ -10,6 +10,7 @@ const popup = document.querySelector(".create-book");
 popup.addEventListener('click', (e) => e.stopPropagation());
 let books = [];
 
+
 function formOpen () {
     const overlay = document.querySelector(".overlay");
     overlay.style.visibility = "visible";

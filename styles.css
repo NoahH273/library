@@ -105,7 +105,7 @@
     font-size: 20px;
 }
 
-.add-book {
+.add-book, .add-suggested {
     padding: 0.5em 0.75em;
     border-radius: 50%;
     font-size: 20px;
@@ -116,7 +116,7 @@
     transition: all 0.1s ease;
 }
 
-.add-book:hover {
+.add-book:hover, .add-book:focus, .add-suggested:hover, .add-suggested:focus {
     background-color: var(--button-hover-color);
 }
 
@@ -133,6 +133,10 @@
     border-radius: 15px;
     box-shadow: 0 0 10px 0 var(--shadow-color);
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
 }
 
 .book dl {
@@ -140,13 +144,21 @@
     grid-template-columns: max-content max-content;
     grid-auto-rows: 25px;
     column-gap: 15px;
+    margin: 0;
 }
 
 .book dl>dd {
     margin: 0;
 }
 
+.book-buttons {
+    flex: 1;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 25px;
 
+}
 
 
 .sidebar-container {
@@ -184,8 +196,7 @@
 
 .read-button {
    margin: 0;
-   place-self: center initial;
-   cursor: grab;
+   cursor: default;
 }
 
 .footer {
